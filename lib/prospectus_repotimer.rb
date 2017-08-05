@@ -1,3 +1,5 @@
+require 'date'
+
 module ProspectusCircleci
   ##
   # Helper for automatically adding build status check
@@ -14,12 +16,27 @@ module ProspectusCircleci
           name 'timer'
 
           expected do
+            static
+            set expected_val
           end
 
           actual do
+            static
+            set actual_val
           end
         end
       end
     end
+
+    def parse_status
+      [last_commit_days_ago, @days_ago]
+    end
+
+    def last_commit_days_ago
+      @last_commit_days_ago || = (Date.today - last_commit).to_i
+    end
+
+    def last_commit
+      @last_commit ||= Date.parse(`git show --format=%cI -s`)
   end
 end
