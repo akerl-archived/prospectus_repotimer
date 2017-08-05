@@ -1,9 +1,9 @@
 require 'date'
 
-module ProspectusCircleci
+module ProspectusRepotimer
   ##
-  # Helper for automatically adding build status check
-  class Build < Module
+  # Helper for automatically adding timer check
+  class Timer < Module
     def initialize(days_ago)
       @days_ago = days_ago || raise('No age specified')
     end
