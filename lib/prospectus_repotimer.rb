@@ -33,10 +33,11 @@ module ProspectusCircleci
     end
 
     def last_commit_days_ago
-      @last_commit_days_ago || = (Date.today - last_commit).to_i
+      @last_commit_days_ago ||= (Date.today - last_commit).to_i
     end
 
     def last_commit
       @last_commit ||= Date.parse(`git show --format=%cI -s`)
+    end
   end
 end
