@@ -41,7 +41,7 @@ module ProspectusRepotimer
     end
 
     def days_ago_array
-      @days_ago.downto(0)
+      @days_ago.downto(0).to_a
     end
   end
 end
