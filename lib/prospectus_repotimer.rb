@@ -29,7 +29,7 @@ module ProspectusRepotimer
     end
 
     def parse_status
-      [last_commit_days_ago, @days_ago]
+      [last_commit_days_ago, days_ago_array]
     end
 
     def last_commit_days_ago
@@ -38,6 +38,10 @@ module ProspectusRepotimer
 
     def last_commit
       @last_commit ||= Date.parse(`git show --format=%cI -s`)
+    end
+
+    def days_ago_array
+      @days_ago.downto(0)
     end
   end
 end
