@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date        = Time.now.strftime('%Y-%m-%d')
 
   s.summary     = 'Prospectus helpers for checking repo staleness'
-  s.description = "Prospectus helpers for checking repo staleness"
+  s.description = 'Prospectus helpers for checking repo staleness'
   s.authors     = ['Les Aker']
   s.email       = 'me@lesaker.org'
   s.homepage    = 'https://github.com/amylum/prospectus_repotimer'
