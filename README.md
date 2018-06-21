@@ -18,8 +18,8 @@ Add the following 2 lines to the .prospectus:
 ## Add this at the top
 Prospectus.extra_dep('file', 'prospectus_repotimer')
 
-## Add this inside your item that has a build
-extend ProspectusRepotimer.build(days_ago)
+## Add this inside your item that needs a timer
+extend ProspectusRepotimer::Timer.new(days_ago)
 ```
 
 ## Installation
