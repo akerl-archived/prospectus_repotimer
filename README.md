@@ -2,7 +2,7 @@ prospectus_repotimer
 =========
 
 [![Gem Version](https://img.shields.io/gem/v/prospectus_repotimer.svg)](https://rubygems.org/gems/prospectus_repotimer)
-[![Build Status](https://img.shields.io/circleci/project/akerl/prospectus_repotimer.svg)](https://circleci.com/gh/akerl/prospectus_repotimer)
+[![Build Status](https://img.shields.io/travis/com/akerl/prospectus_repotimer.svg)](https://travis-ci.com/akerl/prospectus_repotimer)
 [![Coverage Status](https://img.shields.io/codecov/c/github/akerl/prospectus_repotimer.svg)](https://codecov.io/github/akerl/prospectus_repotimer)
 [![Code Quality](https://img.shields.io/codacy/c5623564a4034ece993510d28edb19de.svg)](https://www.codacy.com/app/akerl/prospectus_repotimer)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
