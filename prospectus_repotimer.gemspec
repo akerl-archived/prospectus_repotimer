@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = 'Prospectus helpers for checking repo staleness'
   s.authors     = ['Les Aker']
   s.email       = 'me@lesaker.org'
-  s.homepage    = 'https://github.com/amylum/prospectus_repotimer'
+  s.homepage    = 'https://github.com/akerl/prospectus_repotimer'
   s.license     = 'MIT'
 
   s.files       = `git ls-files`.split
