@@ -1,29 +1,29 @@
 prospectus_repotimer
 =========
 
-[![Gem Version](https://img.shields.io/gem/v/prospectus_repotimer.svg)](https://rubygems.org/gems/prospectus_repotimer)
 [![Build Status](https://img.shields.io/travis/com/akerl/prospectus_repotimer.svg)](https://travis-ci.com/akerl/prospectus_repotimer)
-[![Coverage Status](https://img.shields.io/codecov/c/github/akerl/prospectus_repotimer.svg)](https://codecov.io/github/akerl/prospectus_repotimer)
-[![Code Quality](https://img.shields.io/codacy/c5623564a4034ece993510d28edb19de.svg)](https://www.codacy.com/app/akerl/prospectus_repotimer)
+[![GitHub release](https://img.shields.io/github/release/akerl/prospectus_repotimer.svg)](https://github.com/akerl/prospectus_repotimer/releases)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
-[Prospectus](https://github.com/akerl/prospectus) helpers for checking for repo staleness
+
+[Prospectus](https://github.com/akerl/prospectus) plugin for checking for repo staleness
 
 ## Usage
 
-Add the following 2 lines to the .prospectus:
+Add a check to your `.prospectus.d` directory with the following contents:
 
 ```
-## Add this at the top
-Prospectus.extra_dep('file', 'prospectus_repotimer')
-
-## Add this inside your item that needs a timer
-extend ProspectusRepotimer::Timer.new(days_ago)
+#!/usr/bin/env prospectus_repotimer
+days: 7
 ```
+
+Replace the `days` value as desired to set how frequently the repo should be updated.
 
 ## Installation
 
-    gem install prospectus_repotimer
+```
+go get https://github.com/akerl/prospectus_repotimer
+```
 
 ## License
 
