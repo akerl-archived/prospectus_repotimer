@@ -26,7 +26,7 @@ func (p *timerPlugin) GetConfigPointer() interface{} {
 	return &p.Config
 }
 
-func (p *timerPlugin) Load(input plugin.LoadInput) plugin.AttributeSet {
+func (p *timerPlugin) Load(_ plugin.LoadInput) plugin.AttributeSet {
 	return plugin.AttributeSet{plugin.Attribute{Name: "repotimer"}}
 }
 
