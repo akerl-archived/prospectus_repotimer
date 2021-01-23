@@ -1,7 +1,7 @@
 prospectus_repotimer
 =========
 
-[![Build Status](https://img.shields.io/travis/com/akerl/prospectus_repotimer.svg)](https://travis-ci.com/akerl/prospectus_repotimer)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akerl/prospectus_repotimer/Build)](https://github.com/akerl/prospectus_repotimer/actions)
 [![GitHub release](https://img.shields.io/github/release/akerl/prospectus_repotimer.svg)](https://github.com/akerl/prospectus_repotimer/releases)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 

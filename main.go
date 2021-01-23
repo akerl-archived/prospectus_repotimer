@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akerl/prospectus/plugin"
+	"github.com/akerl/prospectus/v2/plugin"
 
 	"gopkg.in/src-d/go-git.v4"
 )
